@@ -9,7 +9,7 @@ public class BankAccountTest {
     public void testDeposit() {
         BankAccount myAccount = new BankAccount(1000);
         myAccount.deposit(500);
-        assertEquals(1600, myAccount.getBalance(), 0.001);
+        assertEquals(1500, myAccount.getBalance(), 0.001);
     }
 
     @Test
