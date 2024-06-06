@@ -35,6 +35,8 @@ jobs:
       working-directory: ./GitHubActions
     - name: Build and run unit tests
       run: mvn -B test --file pom.xml
+    - name: Display test results
+      run: mvn surefire-report:report
 #    - name: Cache Maven packages
 #      uses: actions/cache@v2
 #      with:
