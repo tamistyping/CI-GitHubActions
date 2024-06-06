@@ -19,6 +19,13 @@ jobs:
     - name: Build and test with Maven
       run: mvn -B package --file pom.xml
       working-directory: GitHubActions
-#    - name: Test with Maven
-#      run: mvn test
-#      working-directory: GitHubActions
+
+
+  sayHello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello from sayHello"
+      - name: echo "Goodbye from sayHello"
+
+    
