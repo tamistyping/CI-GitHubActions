@@ -1,5 +1,4 @@
-// import the necessary packages
-import com.sparta.clf.BankAccount;
+package com.sparta.clf;// import the necessary packages
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
