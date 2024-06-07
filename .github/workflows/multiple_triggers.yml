@@ -2,7 +2,7 @@ name: Mulitple triggers
 on: [ push, workflow_dispatch ]
 jobs:
   say_something_else:
-  needs: say_something
+    needs: say_something
     runs-on: ubuntu-latest
     steps:
     - name: Something else
