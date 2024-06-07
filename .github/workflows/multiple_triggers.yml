@@ -1,0 +1,16 @@
+name: Mulitple triggers
+on: [ push, workflow_dispatch ]
+jobs:
+  say_something_else:
+  needs: say_something
+    runs-on: ubuntu-latest
+    steps:
+    - name: Something else
+      run: echo "Must run after say_something"
+  say_something:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "This is the first step"
+      - name: Step 2
+        run: echo "This is the second step"
