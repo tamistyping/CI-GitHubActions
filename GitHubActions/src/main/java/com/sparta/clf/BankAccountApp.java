@@ -6,5 +6,6 @@ public class BankAccountApp {
         myAccount.deposit(500);
         myAccount.withdraw(200);
         System.out.println("Current balance: " + myAccount.getBalance());
+        // this is a comment
     }
 }
